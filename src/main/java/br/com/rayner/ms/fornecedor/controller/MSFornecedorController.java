@@ -1,6 +1,7 @@
 package br.com.rayner.ms.fornecedor.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,7 @@ public class MSFornecedorController {
 	private InfoService infoService;
 	
 	@RequestMapping("/{estado}")
-	public InfoFornecedor getInfoPorEstado(String estado) {
+	public InfoFornecedor getInfoPorEstado(@PathVariable String estado) {
 		return infoService.getInfoPorEstado(estado);
 	}
 	
