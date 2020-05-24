@@ -12,7 +12,7 @@
 	<artifactId>fornecedor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ms-fornecedor</name>
-	<description>Micro serviço representando a loja</description>
+	<description>Micro serviço representando o fornecedor</description>
 
 	<properties>
 		<java.version>14</java.version>
